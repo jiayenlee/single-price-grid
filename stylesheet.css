@@ -6,7 +6,9 @@
 .main-container {
   width: 80%;
   margin: 50px auto;
-  padding: 50px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .section1 {
@@ -73,6 +75,17 @@ span {
   border-radius: 10px;
 }
 
+@media (max-width: 500px){
+  .main-container {
+    grid-template-columns: 1fr;
+  }
 
+  .section2 {
+    display: inline-block;
+  }
 
+  .section2 > .monthly-card {
+    height: 40%;
+  }
+}
 
